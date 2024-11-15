@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logogame.png"  type="image/x-icon">
+
+  <title>Abraxos App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+
+    <video id="backgroundVideo" autoplay loop muted>
+      <source src="videos/bateasa.mp4" type="video/mp4">
+      Seu navegador não suporta vídeos.
+    </video>
+
+    <div class="status-container">
+      <div class="status-circle">
+        <span>Saúde</span>
+        <div class="circle">
+          <div id="health-circle" class="fill"></div>
+        </div>
+      </div>
+      <div class="status-circle">
+        <span>Felicidade</span>
+        <div class="circle">
+          <div id="happiness-circle" class="fill"></div>
+        </div>
+      </div>
+      <div class="status-circle">
+        <span>Limpeza</span>
+        <div class="circle">
+          <div id="cleanliness-circle" class="fill"></div>
+        </div>
+      </div>
+      <div class="status-circle">
+        <span>Alimentação</span>
+        <div class="circle">
+          <div id="hunger-circle" class="fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <h1>Olá, o meu nome é Abraxos!</h1>
+      <div class="buttons-container">
+        <button onclick="performAction('comer')">
+          <img src="images/Comer.png" alt="Comer" class="button-icon">
+        </button>
+        <button onclick="performAction('brincar')">
+          <img src="images/Bola.png" alt="Brincar" class="button-icon"> 
+        </button>
+        <button onclick="performAction('banho')">
+          <img src="images/Banho.png" alt="Banho" class="button-icon"> 
+        </button>
+        <button onclick="performAction('tchau')">
+          <img src="images/AelinWeb.png" alt="Tchau" class="button-icon">
+              <a href="#"></a>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
